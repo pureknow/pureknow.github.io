@@ -5,12 +5,20 @@
 <!-- --- -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 <title>PureKnow</title>
+<meta property="description" content="A simple and pure knowledge base">
+<meta property="og:title" content="PureKnow">
+<meta property="og:description" content="A simple and pure knowledge base">
+<meta property="og:url" content="https://pureknow.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PureKnow">
+<meta property="og:locale" content="en_US">
 
 <link rel="icon" type="image/x-icon" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:image" content="https://pureknow.github.io/assests/PureKnow-cover.png">
-<meta property="twitter:image" content="https://pureknow.github.io/assests/PureKnow-cover.png">">
+<meta property="twitter:image" content="https://pureknow.github.io/assests/PureKnow-cover.png">
 
 <!-- <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +32,16 @@
   background: #eee;
   z-index: 99999;
 }
+.main-hero-wrap {
+  height: 100vh;
+}
+.main-hero {
+  height: 100%;
+}
+.main-app-icon {
+  max-width: 200px;
+  height: auto;
+}
 </style>
 <!-- --- -->
 </head>
@@ -33,18 +51,34 @@
 <div class="app" id="app">
 <!-- --- -->
 
-<div class="page-cover" v-if="false"><div class="container pt-5 text-center">
+<div class="page-cover" v-if="false">
+  <div class="container py-2 main-hero-wrap">
+    <div class="rounded border d-flex align-items-center justify-content-center main-hero">
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <img src="/favicon.svg" alt="PureKnow-icon" class="main-app-icon">
+        <h1 class="fw-bold m-0">PureKnow</h1>
+        <p class="fw-light text-secondary">A simple and pure knowledge base</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="page-cover" v-if="false"><div class="container pt-5 text-center">
   <div class="row"><div><h2>PureKnow</h2></div></div>
   <div class="row"><div><p>loading...</p></div></div>
-</div></div>
+</div></div> -->
 
 
 <div class="main-wrap">
 
-  <div class="container card"></div>
-
-  <div class="d-flex flex-column m-2 p-2 gap-2 rounded border text-secondary bg-secondary bg-opacity-10">
-    <h5 class="mb-0"><code>HELLO!</code></h5>
+  <div class="container py-2 main-hero-wrap">
+      <div class="rounded border d-flex align-items-center justify-content-center main-hero">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <img src="/favicon.svg" alt="PureKnow-icon" class="main-app-icon">
+          <h1 class="fw-bold m-0">PureKnow</h1>
+          <p class="fw-light text-secondary">A simple and pure knowledge base</p>
+        </div>
+      </div>
   </div>
 
 </div>
